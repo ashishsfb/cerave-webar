@@ -30,61 +30,6 @@
 
   <!-- 8th wall APP KEY -->
   <script crossorigin="anonymous" src="/external/xr/xr.js" async="true" data-preload-chunks="slam"></script>
-  <script>
-    (function () {
-      function installXrDebugModule() {
-        if (!window.XR8) {
-          console.warn('[XRDBG] XR8 not available yet');
-          return;
-        }
-
-        console.log('[XRDBG] XR8 loaded');
-        if (window.XR8.requiredPermissions) {
-          console.log('[XRDBG] requiredPermissions', window.XR8.requiredPermissions());
-        }
-
-        window.XR8.addCameraPipelineModule({
-          name: 'swaraj-xr-debug',
-          onBeforeRun() {
-            console.log('[XRDBG] onBeforeRun');
-          },
-          onCameraStatusChange(args) {
-            console.log('[XRDBG] onCameraStatusChange', args);
-          },
-          onStart() {
-            console.log('[XRDBG] onStart');
-          },
-          onAttach() {
-            console.log('[XRDBG] onAttach');
-          },
-          onException(error) {
-            console.error('[XRDBG] onException', error);
-          },
-        });
-      }
-
-      document.addEventListener('DOMContentLoaded', function () {
-        var scene = document.querySelector('a-scene');
-        if (scene) {
-          scene.addEventListener('loaded', function () {
-            console.log('[XRDBG] scene loaded');
-          });
-        }
-      });
-
-      if (window.XR8) {
-        installXrDebugModule();
-      } else {
-        window.addEventListener('xrloaded', installXrDebugModule);
-      }
-    }());
-  </script>
-
-  
-  <!-- Mobile Console -->
-  <script src="//cdn.jsdelivr.net/npm/eruda"></script>
-  <script>eruda.init();</script>
-
   <!-- Written components -->
   <script src="/common/components/tap-place-cursor.js"></script>
   <script src="/common/components/align-to-camera.js"></script>
