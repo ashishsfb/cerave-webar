@@ -111,6 +111,11 @@ Notes:
 - Show the generated link
 - If the server was running on 8443 restart the server
 
+## When I ask you to stop the server
+- Stop the local app server on port `8443`
+- Stop the running `ngrok` process as well
+- Confirm that both the server and ngrok have been stopped
+
 ## Current Homepage Variants
 
 The homepage buttons are hardcoded in [`src/views/index.ejs`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/swaraj-ar-app/src/views/index.ejs).
