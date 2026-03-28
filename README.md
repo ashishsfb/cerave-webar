@@ -150,9 +150,9 @@ That means each UI variant must have a matching MongoDB document.
 
 Mock insert-ready payloads are organized here:
 
-- [`src/routes/__mock__/en`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/swaraj-ar-app/src/routes/__mock__/en)
-- [`src/routes/__mock__/ar`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/swaraj-ar-app/src/routes/__mock__/ar)
-- [`src/routes/__mock__/es`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/swaraj-ar-app/src/routes/__mock__/es)
+- [`src/routes/__mock__/en`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/en)
+- [`src/routes/__mock__/ar`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/ar)
+- [`src/routes/__mock__/es`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/es)
 
 Each `.txt` file contains insert-ready JSON for MongoDB.
 
