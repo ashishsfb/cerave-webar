@@ -41,6 +41,8 @@ The app uses HTTPS locally and reads:
 
 - [`key.pem`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/key.pem)
 - [`cert.pem`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/cert.pem)
+- [`key.pem`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/key.pem)
+- [`cert.pem`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/cert.pem)
 
 Run on a non-privileged local port:
 
@@ -119,6 +121,7 @@ Notes:
 ## Current Homepage Variants
 
 The homepage buttons are hardcoded in [`src/views/index.ejs`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/views/index.ejs).
+The homepage buttons are hardcoded in [`src/views/index.ejs`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/views/index.ejs).
 
 Current routes exposed by the UI:
 
@@ -127,6 +130,7 @@ Current routes exposed by the UI:
   - `/product?lang=en&name=foaming-cleanser&size=8oz`
   - `/product?lang=en&name=moisturizing-lotion&size=8oz`
   - `/product?lang=en&name=moisturizing-cream&size=12oz`
+  - `/product?lang=en&name=moisturizing-cream&size=16oz`
   - `/product?lang=en&name=moisturizing-cream&size=16oz`
   - `/product?lang=en&name=cream-to-foam-cleanser&size=8oz`
 - Arabic
@@ -137,6 +141,7 @@ Current routes exposed by the UI:
   - `/product?lang=ar&name=cream-to-foam-cleanser&size=8oz`
 - Spanish
   - `/product?lang=es&name=moisturizing-lotion&size=8oz`
+  - `/product?lang=es&name=moisturizing-cream&size=12oz`
   - `/product?lang=es&name=moisturizing-cream&size=16oz`
 
 ## Product Data
@@ -154,13 +159,20 @@ Mock insert-ready payloads are organized here:
 - [`src/routes/__mock__/en`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/en)
 - [`src/routes/__mock__/ar`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/ar)
 - [`src/routes/__mock__/es`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/es)
+- [`src/routes/__mock__/en`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/en)
+- [`src/routes/__mock__/ar`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/ar)
+- [`src/routes/__mock__/es`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/es)
 
 Each `.txt` file contains insert-ready JSON for MongoDB.
 
 Examples:
 
 - [`src/routes/__mock__/en/moisturizing-cream-12oz-en-data.txt`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/en/moisturizing-cream-12oz-en-data.txt)
+<<<<<<< HEAD
 - [`src/routes/__mock__/en/moisturizing-cream-16oz-en-data.txt`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/en/moisturizing-cream-16oz-en-data.txt) (`mc-16oz-en`)
+=======
+- [`src/routes/__mock__/es/moisturizing-cream-12oz-es-data.txt`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/es/moisturizing-cream-12oz-es-data.txt)
+>>>>>>> adding-mc-12oz-es
 - [`src/routes/__mock__/es/moisturizing-cream-16oz-es-data.txt`](/Users/ashish/_MAC_ALMANAC/EXPERIMENTS/2026/cerave-projects-2026/cerave-ar-app/src/routes/__mock__/es/moisturizing-cream-16oz-es-data.txt)
 
 ## Useful Test Links
